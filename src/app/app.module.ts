@@ -1,6 +1,5 @@
 import { environment } from './../environments/environment';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { Base_Remote_ApiUrl } from './Config/defaultss.config';
 import { ApiUrlInterceptor } from './shared/services/apiurl.interceptor';

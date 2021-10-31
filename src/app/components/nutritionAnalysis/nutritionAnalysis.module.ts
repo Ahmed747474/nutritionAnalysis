@@ -1,3 +1,4 @@
+import { AnalysisService } from './service/analysis.service';
 import { TotalNutrituinReceiptComponent } from './total-nutrituin-receipt/total-nutrituin-receipt.component';
 import { NgModule } from '@angular/core';
 import { NutritionAnalysisComponent } from './nutritionAnalysis.component';
@@ -14,5 +15,6 @@ import { IngrErrorComponent } from './ingr-error/ingr-error.component';
     IngrErrorComponent,
   ],
   entryComponents: [SummaryDialogComponent],
+  providers: [AnalysisService],
 })
 export class NutritionAnalysisModule {}

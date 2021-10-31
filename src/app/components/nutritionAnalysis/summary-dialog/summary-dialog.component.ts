@@ -25,7 +25,6 @@ export class SummaryDialogComponent implements OnInit {
       if (!ingr.parsed) this.errorData = true;
     });
   }
-
   getTotalNutrition(): void {
     this.receipt.getTotalNutrition();
   }
