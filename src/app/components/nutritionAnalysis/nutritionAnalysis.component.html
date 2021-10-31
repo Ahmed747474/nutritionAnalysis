@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-card-subtitle>
+    <h6>
+      <strong>
+        Enter an ingredient list list for what you are cooking, like
+        <span class="exmp-list"
+          >1 cup rice <br />
+          10 oz chickpeas</span
+        >, etc. Enter each ingredient on a new line.
+      </strong>
+    </h6></mat-card-subtitle
+  >
+  <mat-card-content>
+    <mat-form-field
+    appearance="fill">
+      <mat-label>Textarea</mat-label>
+      <textarea
+      autofocus
+        [formControl]="foodsInput"
+        required
+        matInput
+        rows="8"
+      >
+      </textarea>
+      <small *ngIf="foodsInput.hasError && foodsInput.dirty">
+        <span *ngIf="foodsInput.hasError('required')"
+          >Please enter at least an ingredient EX: 1 cup rice</span
+        >
+        <span *ngIf="foodsInput.hasError('minlength')"
+          >Minimum 10 characters</span
+        >
+      </small>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      (click)="analyzeFoods()"
+      mat-raised-button
+      color="success"
+      [disabled]="foodsInput.invalid || analysisLoading || validateLines()"
+    >
+      Analyze
+    </button>
+  </mat-card-actions>
+  <mat-card-footer>
+    <mat-progress-bar
+      mode="indeterminate"
+      color="success"
+      *ngIf="analysisLoading"
+    ></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>

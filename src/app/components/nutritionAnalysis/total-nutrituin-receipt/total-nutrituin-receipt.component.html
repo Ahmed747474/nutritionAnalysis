@@ -1,0 +1,168 @@
+<mat-card *ngIf="getTotalLoading">
+  <mat-card-title
+    >Total Calories
+    {{ data.totalNutrients.ENERC_KCAL?.quantity | number: "1.0-0" }}
+    {{ data.totalNutrients.ENERC_KCAL?.unit }}
+  </mat-card-title>
+  <mat-card-content>
+    <table class="table">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="2" scope="row">
+            {{ data.totalDaily.FAT?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.FAT?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.FAT?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.FAT?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.FAT?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2" scope="row">
+            {{ data.totalDaily.CHOLE?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.CHOLE?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.CHOLE?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.CHOLE?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.CHOLE?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2" scope="row">
+            {{ data.totalDaily.NA?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.NA?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.NA?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.NA?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.NA?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2" scope="row">
+            {{ data.totalDaily.CHOCDF?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.CHOCDF?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.CHOCDF?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.CHOCDF?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.CHOCDF?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">Dietary {{ data.totalDaily.FIBTG?.label }}</th>
+          <td>
+            {{ data.totalNutrients.FIBTG?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.FIBTG?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.FIBTG?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.FIBTG?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">Total {{ data.totalNutrients.SUGAR?.label }}</th>
+          <td>
+            {{ data.totalNutrients.SUGAR?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.SUGAR?.unit }}
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th colspan="2" scope="row">
+            {{ data.totalDaily.PROCNT?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.PROCNT?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.PROCNT?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.PROCNT?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.PROCNT?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">
+            {{ data.totalNutrients.VITD?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.VITD?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.VITD?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.VITD?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.VITD?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">
+            {{ data.totalNutrients.CA?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.CA?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.CA?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.CA?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.CA?.unit }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">
+            {{ data.totalNutrients.FE?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.FE?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.FE?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.FE?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.FE?.unit }}
+          </td>
+        </tr>
+        <tr>
+          <td class="blank-cell"></td>
+          <th scope="row">
+            {{ data.totalNutrients.K?.label }}
+          </th>
+          <td>
+            {{ data.totalNutrients.K?.quantity | number: "1.0-1" }}
+            {{ data.totalNutrients.K?.unit }}
+          </td>
+          <td>
+            {{ data.totalDaily.K?.quantity | number: "1.0-0" }}
+            {{ data.totalDaily.K?.unit }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card-content>
+  <mat-card-footer> </mat-card-footer>
+</mat-card>

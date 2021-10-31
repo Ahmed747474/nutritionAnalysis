@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+ @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+ .mat-raised-button.mat-success,
+ .mat-flat-button.mat-success,
+ .mat-fab.mat-success,
+ .mat-mini-fab.mat-success {
+   color: #fff;
+   background-color: #7aca25;
+ }
+.mat-toolbar.mat-success{
+  background: #7aca25;
+  color: #fff;
+
+ }
+
+mat-progress-bar .mat-progress-bar-fill::after {
+  background: #7aca25;
+}
+.spacer {
+  flex: 1 1 auto;
+}
